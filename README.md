@@ -21,3 +21,9 @@ This project is the frontend of the Operations Task Management system for The Cl
 ## License
 
 This project is licensed under the MIT License.
+
+## Screenshots
+![1](./images/1.png)
+![2](./images/2.png)
+![2](./images/3.png)
+![2](./images/4.png)
