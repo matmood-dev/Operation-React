@@ -1,0 +1,85 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden; /* Prevent background scrolling */
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px; /* Adjust padding */
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the close button is positioned correctly */
+  max-height: 90vh; /* Limit the height to viewport height */
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-form .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-form label {
+  flex: 0 0 30%;
+  font-size: 0.7rem; /* Adjust font size */
+  color: #555;
+  margin-right: 10px; /* Add space between label and input */
+}
+
+.modal-form input {
+  flex: 1 1 70%;
+  padding: 8px; /* Adjust padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.7rem; /* Adjust font size */
+}
+
+.close-button {
+  background-color: white;
+  color: red;
+  border-radius: 25px;
+  font-size: 1.5rem; /* Adjust font size */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .modal-form label {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .modal-form input {
+    padding: 6px; /* Reduce padding for smaller screens */
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .close-button {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}

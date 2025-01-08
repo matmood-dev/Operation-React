@@ -1,0 +1,87 @@
+/* Background and Container Styling */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/11254901/pexels-photo-11254901.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Overlay to darken the background image for better text readability */
+  .coming-soon-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+  }
+  
+  /* Content Styling */
+  .content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Headline Styling */
+  .content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: slideInDown 1.5s ease-in-out;
+  }
+  
+  /* Paragraph Styling */
+  .content p {
+    font-size: 1.5rem;
+    animation: slideInUp 1.5s ease-in-out;
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 3rem;
+    }
+  
+    .content p {
+      font-size: 1.2rem;
+    }
+  }
+  

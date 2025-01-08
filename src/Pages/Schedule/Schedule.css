@@ -1,0 +1,172 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9; /* Set background color */
+}
+
+/* Schedule Page Styles */
+.schedule-page {
+  padding: 10px; /* Reduce padding */
+  min-height: 100vh;
+  padding-top: 50px; /* Reduce top padding */
+}
+
+.schedule-page h1 {
+  font-size: 1.9rem; /* Further reduce font size */
+  color: #333;
+  margin-bottom: 10px; /* Further reduce margin */
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Reduce gap */
+  margin-bottom: 10px; /* Further reduce margin */
+}
+
+.task-form label {
+  flex: 1 1 100%;
+  font-size: 0.8rem; /* Adjust font size */
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.task-form input {
+  flex: 1 1 calc(50% - 10px);
+  padding: 6px; /* Further reduce padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.8rem; /* Further reduce font size */
+}
+
+/* Schedule Table Styles */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px; /* Further reduce margin */
+  overflow-x: auto; /* Allow horizontal scroll for the table */
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px; /* Further reduce padding */
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.schedule-table th {
+  background-color: #21a1f1;
+  color: #fff;
+  font-weight: 600;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Action Button Styles */
+.action-button {
+  background-color: #ff7e5f;
+  border: none;
+  color: white;
+  padding: 5px 10px; /* Reduce padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.6rem; /* Reduce font size */
+  margin: 0 0 5px 5px; /* Adjust margin */
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #feb47b;
+}
+
+.action-button:active {
+  transform: translateY(1px);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px; /* Adjust padding */
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the close button is positioned correctly */
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem; /* Adjust font size */
+  color: #555;
+}
+
+.modal-form input {
+  padding: 8px; /* Adjust padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Adjust font size */
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem; /* Adjust font size */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .modal-form label {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .modal-form input {
+    padding: 6px; /* Reduce padding for smaller screens */
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+  
+  .close-button {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
