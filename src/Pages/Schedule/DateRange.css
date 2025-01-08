@@ -1,0 +1,27 @@
+/* DateRange.css */
+
+.date-range-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+  }
+  
+  .date-range-container label {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .date-range-container input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .date-range-container input[type="date"]:focus {
+    border-color: #4CAF50;
+  }
+  
