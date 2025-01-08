@@ -18,10 +18,6 @@ This project is the frontend of the Operations Task Management system for The Cl
 - jsPDF
 - react-router-dom
 
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License.
