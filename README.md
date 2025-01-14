@@ -1,6 +1,7 @@
 # The Closets International - Operations Task Management Frontend
 
-This project is the frontend of the Operations Task Management system for The Closets International. It is designed to facilitate the operations department in managing their tasks efficiently. The application allows users to insert new tasks, edit existing tasks, and delete tasks as needed. Additionally, it enables tracking and displaying of all task data and provides an option to export the data to PDF format for easy reporting and sharing.
+This project is the frontend of the Operations Task Management system for The Closets International, with a robust backend built using Node.jsand Express.js, and SQLite as the database. It facilitates the operations department by allowing users to seamlessly insert, edit, and delete tasks, track and display all task data efficiently, and export the data to PDF format for easy reporting and sharing, enhancing overall task management and operational efficiency.
+
 
 ## Features
 
